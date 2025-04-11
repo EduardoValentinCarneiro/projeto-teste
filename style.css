@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #e8f5e9, #f0f0f0);
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(to right, #6d9e67, #4a6b4c);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px #000;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 1rem;
+  }
+  
+  .event {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #ffffffee;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .event:hover {
+    transform: scale(1.02);
+  }
+  
+  .campo, .cidade {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .event img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .interativo {
+    background: #fff3cd;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 5px solid #ffc107;
+  }
+  
+  .interativo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .interativo button {
+    background-color: #6d9e67;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .interativo button:hover {
+    background-color: #4a6b4c;
+  }
+  
+  .mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+  
+  .campo-ponto, .cidade-reacao {
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .campo-ponto:hover,
+  .cidade-reacao:hover {
+    transform: scale(1.1);
+    background-color: #dfffdc;
+  }
+  
+  .cidade-reacao.ativo {
+    background-color: #c8e6ff;
+    transform: scale(1.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .quiz-btn {
+    background-color: #6d9e67;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .quiz-btn:hover {
+    background-color: #4a6b4c;
+    transform: scale(1.05);
+  }
+  

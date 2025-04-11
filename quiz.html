@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz - Campo ou Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body class="fade-in">
+  <header>
+    🌾🎡 Festejando a Conexão Campo-Cidade 🌇🚜
+    <small>Quiz - Você é mais Campo ou Cidade?</small>
+  </header>
+
+  <main>
+    <div class="progress-container">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <div id="quiz">
+      <h2 id="pergunta"></h2>
+      <button onclick="responder('campo')">Mais Campo</button>
+      <button onclick="responder('cidade')">Mais Cidade</button>
+    </div>
+
+    <p id="resultado"></p>
+
+    <button class="audio-btn" onclick="toggleSom()">🔊 Ativar/Desativar Som</button>
+
+    <div id="voltar" style="text-align: center; display: none;">
+      <a href="index.html"><button class="voltar-btn">⬅️ Voltar ao Site</button></a>
+    </div>
+
+    <audio id="somAmbiente" loop>
+      <source src="https://cdn.pixabay.com/download/audio/2022/03/28/audio_6ac8ba4411.mp3?filename=birds-forest-nature-ambient-110047.mp3" type="audio/mp3">
+      Seu navegador não suporta áudio.
+    </audio>
+  </main>
+
+  <footer>
+    Feito por Eduardo Valentin Carneiro © 2025
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festejando a Conexão Campo-Cidade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    🌾🎡 Festejando a Conexão Campo-Cidade 🌇🚜
+  </header>
+
+  <section class="timeline">
+    <div class="event">
+      <div class="campo">
+        <img src="./img/campo.jpg" alt="Campo" />
+        <h3>Manhã no Campo</h3>
+        <p>Produtores rurais iniciam o dia colhendo alimentos frescos.</p>
+      </div>
+      <div class="cidade">
+        <img src="./img/cidade.jpg" alt="Cidade" />
+        <h3>Manhã na Cidade</h3>
+        <p>Alimentos frescos chegam às feiras e mercados urbanos.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="campo">
+        <img src="./img/energia.jpg" alt="Energia no campo" />
+        <h3>Tarde no Campo</h3>
+        <p>Energia limpa gerada a partir do sol e vento.</p>
+      </div>
+      <div class="cidade">
+        <img src="./img/luz.jpg" alt="Energia na cidade" />
+        <h3>Tarde na Cidade</h3>
+        <p>Essa energia abastece casas, escolas e empresas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="interativo">
+    <h2>Clique para ver o impacto do campo na cidade</h2>
+    <div class="mapa-container">
+      <div class="campo-ponto" onclick="mostrarImpacto()">🌽 Produção Rural</div>
+      <div id="cidadeReacao" class="cidade-reacao">💡 Iluminação Urbana</div>
+    </div>
+  </section>
+
+  <section class="interativo">
+    <h2>Vamos descobrir seu estilo?</h2>
+    <a href="quiz.html"><button class="quiz-btn">Fazer o Quiz</button></a>
+  </section>
+
+  <footer>
+    Feito por Eduardo Valentin Carneiro © 2025
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
